@@ -1,3 +1,4 @@
+package main.java;
 public class Users {
   private String userName;
   private String password;
