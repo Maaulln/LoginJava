@@ -214,6 +214,11 @@
             if (result.success) {
               messageDiv.innerHTML = `<div class="message success">${result.message}</div>`;
               document.getElementById("loginForm").reset();
+              
+              // Redirect to the specified URL after successful login
+              setTimeout(() => {
+                window.location.href = "https://waan.framer.website/";
+              }, 1500); // Wait 1.5 seconds to show success message
             } else {
               messageDiv.innerHTML = `<div class="message error">${result.message}</div>`;
             }
